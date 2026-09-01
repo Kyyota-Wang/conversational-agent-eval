@@ -1,0 +1,20 @@
+{
+  "name": "conversational-agent-eval",
+  "version": "0.1.0",
+  "description": "Evaluate a conversational agent: deterministic rule checks first, LLM-as-judge second, variance across repeated runs.",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "agent-eval": "./bin/evaluate.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "example": "node bin/evaluate.js --cases examples/cases --agent examples/mock-agent.js --runs 3"
+  },
+  "keywords": ["llm", "evaluation", "llm-as-judge", "conversational-ai", "agent", "testing"],
+  "files": ["src", "bin", "examples", "README.md", "LICENSE"]
+}
