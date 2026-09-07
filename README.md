@@ -21,8 +21,14 @@ PASS   C05    3/3  Well-specified request
 5 cases x 3 runs -> 3 pass, 1 fail, 1 flapping
 ```
 
-Extracted and generalised from the evaluation harness behind a production intake
-assistant. The agent it was written against is not here; the method is.
+Extracted and generalised from the harness behind
+**[Pumpkin AI](https://pumpkinsolve.com)**, a deployed assistant holding real
+conversations with real visitors. The agent itself is not in this repository;
+the method is.
+
+One rule here is not hypothetical. That site tells visitors not to include
+passwords, payment information or medical records — so the harness asserts, on
+every run and without a model call, that the assistant never asks for them.
 
 ---
 
